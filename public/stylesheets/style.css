@@ -27,8 +27,9 @@ body {
   background-position: 0 0;
   background-size: cover;
   height: 100vh;
-  overflow: hidden;
+
   position: relative;
+  opacity: 1;
 }
 
 .layout.nav--active main {
@@ -104,17 +105,19 @@ body {
 }
 
 .hero-text {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   font-size: 1.1rem;
   line-height: 1.75;
   margin: 0;
   margin-left: auto;
-  margin-right: 10rem;
+  margin-right: auto;
+  margin-bottom: 5%;
   padding: 5rem 3rem 3rem;
-  transform: translateY(-3rem);
+  transform: translateY(-1rem);
   width: 50%;
   z-index: 0;
+  min-width: 400px;
 }
 
 .hero-text a {
@@ -267,4 +270,92 @@ body {
 .nav--header-2 > .nav__item > .nav__link:hover {
   background-size: 6px 50px;
   color: #000000;
+}
+
+.sticky {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: auto;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+.sticky2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: 25rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 5rem;
+}
+
+.office-h1 {
+  display: block;
+  color: #fff;
+  position: relative;
+  font-size: 4rem;
+  line-height: 5.4rem;
+}
+
+.office-p {
+  display: block;
+  color: #fff;
+  position: relative;
+  font-size: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  width: 70rem;
+  grid-gap: 16rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-auto-rows: auto;
+  align-items: start;
+}
+
+.grid-item {
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #fff;
+}
+
+.grid-item:hover {
+  transform: translateY(-5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  display: block;
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+}
+
+.image {
+  height: 18rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image2 {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_header {
+  color: black;
+  padding: 3rem 3rem;
+  font-size: 2rem;
+}
+
+.card_text {
+  color: black;
+  margin-bottom: 2.5rem;
 }
